@@ -123,8 +123,8 @@
     </p>
     <div class="cta-botones">
       <a href="cotiza.html" class="btn btn-primario">Solicitar cotización →</a>
-      <a href="https://wa.me/5216621705229" class="btn btn-whatsapp" target="_blank" rel="noopener">
-        <i class="ti ti-brand-whatsapp"></i> 662 170 5229
+      <a href="https://wa.me/5216621706088" class="btn btn-whatsapp" target="_blank" rel="noopener">
+        <i class="ti ti-brand-whatsapp"></i> 662 170 6088
       </a>
     </div>
   </section>
@@ -134,15 +134,14 @@
       <div class="footer-info">
         <img src="assets/logo.jpg" alt="Anvavi" class="footer-logo">
         <p class="footer-info-texto">Comercializadora con más de 20 años abasteciendo al noroeste de México.</p>
-        <div class="footer-direccion">Benito Juárez #31, Col. Centro<br>Hermosillo, Sonora</div>
+        <div class="footer-direccion">Av. Plutarco Elías Calles 12B, Col. Centro<br>Hermosillo, Sonora</div>
       </div>
       <div class="footer-columnas">
         <div>
           <div class="footer-titulo">Contacto</div>
           <div class="footer-lista">
-            <a href="tel:6621705229">662 170 5229</a><br>
             <a href="tel:6621706088">662 170 6088</a><br>
-            <a href="mailto:beamirazo@hotmail.com">beamirazo@hotmail.com</a>
+            <a href="mailto:cotizaciones@anvavi.com.mx">cotizaciones@anvavi.com.mx</a>
           </div>
         </div>
         <div>
@@ -161,7 +160,7 @@
     </div>
   </footer>
 
-  <a href="https://wa.me/5216621705229" class="wa-flotante" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+  <a href="https://wa.me/5216621706088" class="wa-flotante" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
     <i class="ti ti-brand-whatsapp"></i>
   </a>
 
@@ -169,6 +168,44 @@
     function toggleMenu() {
       document.getElementById('navMenu').classList.toggle('abierto');
     }
+  </script>
+
+  <script>
+    // Navbar dinámico: se oculta al scroll abajo, aparece al subir
+    (function() {
+      const nav = document.querySelector('.nav');
+      let ultimoScroll = 0;
+      let scrollAcumulado = 0;
+      
+      window.addEventListener('scroll', function() {
+        const scrollActual = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // Sombra cuando hay scroll
+        if (scrollActual > 10) {
+          nav.classList.add('nav-scrolled');
+        } else {
+          nav.classList.remove('nav-scrolled');
+        }
+        
+        // No ocultar si estamos cerca del top
+        if (scrollActual < 100) {
+          nav.classList.remove('nav-oculta');
+          ultimoScroll = scrollActual;
+          return;
+        }
+        
+        // Detectar dirección del scroll
+        if (scrollActual > ultimoScroll) {
+          // Scroll hacia abajo - ocultar
+          nav.classList.add('nav-oculta');
+        } else {
+          // Scroll hacia arriba - mostrar
+          nav.classList.remove('nav-oculta');
+        }
+        
+        ultimoScroll = scrollActual;
+      }, { passive: true });
+    })();
   </script>
 
 </body>
