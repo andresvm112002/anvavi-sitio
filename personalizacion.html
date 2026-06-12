@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bordado, DTF y Maquila · Anvavi Comercializadora</title>
+  <meta name="description" content="Servicios de bordado computarizado, impresión DTF, sublimado y maquila. Personaliza uniformes y prendas con el logo de tu empresa en Hermosillo, Sonora.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/logo.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/tabler-icons.min.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo.jpg" alt="Anvavi Comercializadora">
+    </a>
+    <button class="nav-toggle" onclick="toggleMenu()" aria-label="Abrir menú">
+      <i class="ti ti-menu-2"></i>
+    </button>
+    <div class="nav-menu" id="navMenu">
+      <a href="index.html">Inicio</a>
+      <a href="areas.html">Áreas</a>
+      <a href="personalizacion.html" class="activo">Personalización</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="cotiza.html" class="nav-cotiza">Cotiza →</a>
+    </div>
+  </nav>
+
+  <section class="pagina-header">
+    <div class="pagina-header-contenido">
+      <div class="eyebrow">— Servicios propios</div>
+      <h1 class="pagina-titulo">
+        Bordado, DTF, sublimado <span class="serif-italic">y maquila</span>.
+      </h1>
+      <p class="pagina-subtitulo">
+        Personalizamos en nuestras propias instalaciones, con maquinaria industrial y operadores con más de una década de experiencia. Esto significa: mejor precio, mejor control de calidad y tiempos de entrega más cortos.
+      </p>
+    </div>
+  </section>
+
+  <!-- BORDADO -->
+  <section class="bloque">
+    <div class="bloque-contenido">
+      <div class="area-header" style="margin-bottom: 24px;">
+        <div class="area-icono"><i class="ti ti-needle-thread"></i></div>
+        <div class="area-etiqueta">Bordado computarizado</div>
+      </div>
+      <h2>Bordado computarizado</h2>
+      <p>El método más profesional y duradero para personalizar prendas. Ideal para uniformes ejecutivos, gorras, polos, camisas formales y prendas hospitalarias.</p>
+      <h3>Ventajas</h3>
+      <ul>
+        <li>Resistencia al lavado por años (no se cuartea ni se despega)</li>
+        <li>Acabado premium que eleva la percepción de marca</li>
+        <li>Disponible en cualquier color de hilo</li>
+        <li>Tamaño y posición a medida</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- DTF -->
+  <section class="bloque seccion-fondo">
+    <div class="bloque-contenido">
+      <div class="area-header" style="margin-bottom: 24px;">
+        <div class="area-icono"><i class="ti ti-printer"></i></div>
+        <div class="area-etiqueta">Impresión DTF</div>
+      </div>
+      <h2>Impresión DTF (Direct to Film)</h2>
+      <p>La técnica más versátil para diseños con muchos colores, gradientes o fotografías. Perfecta para playeras promocionales, prendas con diseños complejos y producciones a gran escala.</p>
+      <h3>Ventajas</h3>
+      <ul>
+        <li>Cualquier diseño, sin importar la cantidad de colores</li>
+        <li>Funciona en algodón, poliéster y mezclas</li>
+        <li>Costo más accesible que el bordado para diseños grandes</li>
+        <li>Tacto suave y flexible</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SUBLIMADO -->
+  <section class="bloque">
+    <div class="bloque-contenido">
+      <div class="area-header" style="margin-bottom: 24px;">
+        <div class="area-icono"><i class="ti ti-palette"></i></div>
+        <div class="area-etiqueta">Sublimado</div>
+      </div>
+      <h2>Sublimado textil</h2>
+      <p>Técnica de transferencia térmica que funde el diseño con la tela. Ideal para uniformes deportivos, jerseys y prendas que necesitan colores vibrantes que no se desgasten.</p>
+      <h3>Ventajas</h3>
+      <ul>
+        <li>El diseño se vuelve parte de la tela (no se siente al tacto)</li>
+        <li>No se cuartea, no se despega, no se decolora</li>
+        <li>Permite estampados de tamaño completo (todo el frente, toda la manga)</li>
+        <li>Calidad fotográfica</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- MAQUILA -->
+  <section class="bloque seccion-fondo">
+    <div class="bloque-contenido">
+      <div class="area-header" style="margin-bottom: 24px;">
+        <div class="area-icono"><i class="ti ti-scissors"></i></div>
+        <div class="area-etiqueta">Maquila textil</div>
+      </div>
+      <h2>Maquila textil completa</h2>
+      <p>¿Necesitas algo que no existe en el mercado? Lo fabricamos. Patrón, corte, confección y empaque, todo desde cero según tus especificaciones.</p>
+      <h3>Servicios de maquila</h3>
+      <ul>
+        <li>Fabricación de uniformes a medida exacta</li>
+        <li>Mochilas, bolsas y accesorios institucionales</li>
+        <li>Producción de prendas para eventos especiales</li>
+        <li>Maquila por volumen para revendedores</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-final">
+    <h2 class="cta-titulo">
+      ¿Tienes un diseño <span class="serif-italic">listo</span>?
+    </h2>
+    <p class="cta-texto">
+      Mándanos tu logo o diseño por WhatsApp y te decimos qué técnica conviene más para tu necesidad, tu presupuesto y la cantidad de piezas.
+    </p>
+    <div class="cta-botones">
+      <a href="cotiza.html" class="btn btn-primario">Solicitar cotización →</a>
+      <a href="https://wa.me/5216621705229?text=Hola%20Anvavi,%20tengo%20un%20dise%C3%B1o%20para%20personalizar" class="btn btn-whatsapp" target="_blank" rel="noopener">
+        <i class="ti ti-brand-whatsapp"></i> Enviar diseño
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-contenido">
+      <div class="footer-info">
+        <img src="assets/logo.jpg" alt="Anvavi" class="footer-logo">
+        <p class="footer-info-texto">Comercializadora con más de 20 años abasteciendo al noroeste de México.</p>
+        <div class="footer-direccion">Benito Juárez #31, Col. Centro<br>Hermosillo, Sonora</div>
+      </div>
+      <div class="footer-columnas">
+        <div>
+          <div class="footer-titulo">Contacto</div>
+          <div class="footer-lista">
+            <a href="tel:6621705229">662 170 5229</a><br>
+            <a href="tel:6621706088">662 170 6088</a><br>
+            <a href="mailto:beamirazo@hotmail.com">beamirazo@hotmail.com</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-titulo">Empresa</div>
+          <div class="footer-lista">
+            <a href="areas.html">Áreas</a><br>
+            <a href="personalizacion.html">Personalización</a><br>
+            <a href="nosotros.html">Nosotros</a><br>
+            <a href="cotiza.html">Cotiza</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      © 2026 Anvavi Comercializadora · Hermosillo, Sonora
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5216621705229" class="wa-flotante" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <i class="ti ti-brand-whatsapp"></i>
+  </a>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navMenu').classList.toggle('abierto');
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Áreas y Productos · Anvavi Comercializadora</title>
+  <meta name="description" content="Conoce nuestras 4 áreas de especialización: Agrícola, Industrial, Empresarial y Promocionales. Productos personalizados al mayoreo.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/logo.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/tabler-icons.min.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo.jpg" alt="Anvavi Comercializadora">
+    </a>
+    <button class="nav-toggle" onclick="toggleMenu()" aria-label="Abrir menú">
+      <i class="ti ti-menu-2"></i>
+    </button>
+    <div class="nav-menu" id="navMenu">
+      <a href="index.html">Inicio</a>
+      <a href="areas.html" class="activo">Áreas</a>
+      <a href="personalizacion.html">Personalización</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="cotiza.html" class="nav-cotiza">Cotiza →</a>
+    </div>
+  </nav>
+
+  <!-- ENCABEZADO DE LA PÁGINA -->
+  <section class="pagina-header">
+    <div class="pagina-header-contenido">
+      <div class="eyebrow">— Catálogo</div>
+      <h1 class="pagina-titulo">
+        Nuestras <span class="serif-italic">áreas</span> de trabajo.
+      </h1>
+      <p class="pagina-subtitulo">
+        Cuatro frentes principales y un servicio de personalización que los conecta a todos. Cada producto se cotiza a medida de tu necesidad.
+      </p>
+    </div>
+  </section>
+
+  <!-- ÁREA AGRÍCOLA -->
+  <section class="bloque" id="agricola">
+    <div class="bloque-contenido">
+      <div class="area-header" style="margin-bottom: 24px;">
+        <div class="area-icono"><i class="ti ti-plant-2"></i></div>
+        <div class="area-etiqueta">01 / Agrícola</div>
+      </div>
+      <h2>Área Agrícola</h2>
+      <p>Productos diseñados específicamente para trabajadores del campo: prendas protectoras del sol, cobijas para temporada de frío y artículos para el día a día en la jornada agrícola.</p>
+      <h3>Productos disponibles</h3>
+      <ul>
+        <li>Colchonetas individuales (varios materiales y grosores)</li>
+        <li>Cobijas térmicas y de cuadros</li>
+        <li>Gorros y sombreros para sol con protección de cuello</li>
+        <li>Gorras tipo cachucha</li>
+        <li>Prendas para trabajadores del campo (overoles, camisolas, pantalones)</li>
+      </ul>
+      <p style="margin-top: 32px;">
+        <a href="cotiza.html" class="btn btn-secundario">Cotizar productos agrícolas →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ÁREA INDUSTRIAL -->
+  <section class="bloque seccion-fondo" id="industrial">
+    <div class="bloque-contenido">
+      <div class="area-header" style="margin-bottom: 24px;">
+        <div class="area-icono"><i class="ti ti-helmet"></i></div>
+        <div class="area-etiqueta">02 / Industrial</div>
+      </div>
+      <h2>Área Industrial</h2>
+      <p>Equipo de protección personal y prendas industriales para trabajadores de construcción, minería, logística, manufactura y todo tipo de operaciones de alto riesgo.</p>
+      <h3>Productos disponibles</h3>
+      <ul>
+        <li>Overoles industriales (algodón, mezclilla, ignífugos)</li>
+        <li>Chalecos reflejantes (colores y normas a elegir)</li>
+        <li>Impermeables y trajes para lluvia</li>
+        <li>Chamarras con cintas reflejantes</li>
+        <li>Equipos de seguridad: cascos, guantes, lentes, tapones, botas</li>
+      </ul>
+      <p style="margin-top: 32px;">
+        <a href="cotiza.html" class="btn btn-secundario">Cotizar equipo industrial →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ÁREA EMPRESARIAL -->
+  <section class="bloque" id="empresarial">
+    <div class="bloque-contenido">
+      <div class="area-header" style="margin-bottom: 24px;">
+        <div class="area-icono"><i class="ti ti-briefcase"></i></div>
+        <div class="area-etiqueta">03 / Empresarial</div>
+      </div>
+      <h2>Área Empresarial</h2>
+      <p>Uniformes corporativos personalizados con el logo de tu empresa. Tela de calidad, ajuste profesional y bordado o estampado incluido.</p>
+      <h3>Productos disponibles</h3>
+      <ul>
+        <li>Polos con logotipo (varios colores, manga corta y larga)</li>
+        <li>Camisas con logotipo (formales y semi-formales)</li>
+        <li>Pantalones y camisolas tipo industrial</li>
+        <li>Uniformes ejecutivos (chalecos, sacos, blusas)</li>
+        <li>Gorras con bordado a medida</li>
+      </ul>
+      <p style="margin-top: 32px;">
+        <a href="cotiza.html" class="btn btn-secundario">Cotizar uniformes empresariales →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ÁREA PROMOCIONALES -->
+  <section class="bloque seccion-fondo" id="promocionales">
+    <div class="bloque-contenido">
+      <div class="area-header" style="margin-bottom: 24px;">
+        <div class="area-icono"><i class="ti ti-gift"></i></div>
+        <div class="area-etiqueta">04 / Promocionales</div>
+      </div>
+      <h2>Artículos Promocionales</h2>
+      <p>Regalos corporativos, artículos para eventos y promocionales con tu marca. Ideales para conferencias, lanzamientos, capacitaciones y campañas de marketing.</p>
+      <h3>Productos disponibles</h3>
+      <ul>
+        <li>Termos y cilindros (acero inoxidable, plástico)</li>
+        <li>Bolígrafos y artículos de oficina</li>
+        <li>Mochilas, bolsas tote y morrales</li>
+        <li>Libretas, agendas y portafolios</li>
+        <li>Llaveros, figuras anti-stress y accesorios digitales</li>
+        <li>Playeras promocionales</li>
+        <li>Tazas, cables, cargadores y mucho más</li>
+      </ul>
+      <p style="margin-top: 32px;">
+        <a href="cotiza.html" class="btn btn-secundario">Cotizar promocionales →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ¿BUSCAS ALGO MÁS? -->
+  <section class="algo-mas">
+    <div class="algo-mas-contenido">
+      <div class="algo-mas-badge">
+        <i class="ti ti-search"></i> ¿Algo que no aparezca?
+      </div>
+      <h2 class="algo-mas-titulo">
+        Si lo necesitas, <span class="serif-italic">lo conseguimos</span>.
+      </h2>
+      <p class="algo-mas-texto">
+        Lo que ves aquí es solo lo que más cotizamos. Pero nuestra red de fabricantes y proveedores nos permite conseguir <span class="destacado">prácticamente cualquier producto al mayoreo</span>: papelería, productos de limpieza, despensas, calzado, sábanas y blancos hospitalarios, calcetines, perecederos y mucho más.
+      </p>
+      <a href="https://wa.me/5216621705229?text=Hola%20Anvavi,%20busco%20un%20producto%20especial" class="btn btn-blanco" target="_blank" rel="noopener">
+        Pregúntanos por tu producto →
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-contenido">
+      <div class="footer-info">
+        <img src="assets/logo.jpg" alt="Anvavi" class="footer-logo">
+        <p class="footer-info-texto">Comercializadora con más de 20 años abasteciendo al noroeste de México.</p>
+        <div class="footer-direccion">Benito Juárez #31, Col. Centro<br>Hermosillo, Sonora</div>
+      </div>
+      <div class="footer-columnas">
+        <div>
+          <div class="footer-titulo">Contacto</div>
+          <div class="footer-lista">
+            <a href="tel:6621705229">662 170 5229</a><br>
+            <a href="tel:6621706088">662 170 6088</a><br>
+            <a href="mailto:beamirazo@hotmail.com">beamirazo@hotmail.com</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-titulo">Empresa</div>
+          <div class="footer-lista">
+            <a href="areas.html">Áreas</a><br>
+            <a href="personalizacion.html">Personalización</a><br>
+            <a href="nosotros.html">Nosotros</a><br>
+            <a href="cotiza.html">Cotiza</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      © 2026 Anvavi Comercializadora · Hermosillo, Sonora
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5216621705229" class="wa-flotante" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <i class="ti ti-brand-whatsapp"></i>
+  </a>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navMenu').classList.toggle('abierto');
+    }
+  </script>
+
+</body>
+</html>

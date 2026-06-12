@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicita tu cotización · Anvavi Comercializadora</title>
+  <meta name="description" content="Cotiza uniformes, blancos, equipo industrial, promocionales o cualquier producto al mayoreo. Respuesta en menos de 24 horas.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/logo.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/tabler-icons.min.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo.jpg" alt="Anvavi Comercializadora">
+    </a>
+    <button class="nav-toggle" onclick="toggleMenu()" aria-label="Abrir menú">
+      <i class="ti ti-menu-2"></i>
+    </button>
+    <div class="nav-menu" id="navMenu">
+      <a href="index.html">Inicio</a>
+      <a href="areas.html">Áreas</a>
+      <a href="personalizacion.html">Personalización</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="cotiza.html" class="nav-cotiza activo">Cotiza →</a>
+    </div>
+  </nav>
+
+  <section class="pagina-header">
+    <div class="pagina-header-contenido" style="text-align:center;">
+      <div class="badge" style="margin: 0 auto 24px;">
+        <span class="badge-dot"></span>
+        Respuesta en menos de 24 horas
+      </div>
+      <h1 class="pagina-titulo" style="margin-left:auto;margin-right:auto;">
+        Solicita tu <span class="serif-italic">cotización</span>.
+      </h1>
+      <p class="pagina-subtitulo" style="margin: 0 auto;">
+        Cuéntanos qué necesitas. Te respondemos con precio, tiempos de entrega y opciones de personalización. Sin compromiso.
+      </p>
+    </div>
+  </section>
+
+  <!-- FORMULARIO Y CONTACTOS -->
+  <section class="bloque">
+    <div class="bloque-contenido" style="display: grid; grid-template-columns: 1fr 380px; gap: 48px; align-items: start;">
+
+      <!-- FORMULARIO -->
+      <div class="formulario" style="max-width: none; margin: 0;">
+        <h2 style="font-size: 24px; margin-bottom: 8px;">Cuéntanos tu necesidad</h2>
+        <p style="font-size: 14px; color: var(--texto-gris); margin-bottom: 32px;">Entre más detalles nos des, más exacta será nuestra cotización.</p>
+
+        <form action="https://formspree.io/f/REEMPLAZAR_AQUI" method="POST">
+
+          <div class="form-fila">
+            <div class="form-grupo">
+              <label for="nombre">Tu nombre *</label>
+              <input type="text" id="nombre" name="nombre" required placeholder="Juan Pérez">
+            </div>
+            <div class="form-grupo">
+              <label for="empresa">Empresa o institución *</label>
+              <input type="text" id="empresa" name="empresa" required placeholder="Nombre de tu empresa">
+            </div>
+          </div>
+
+          <div class="form-fila">
+            <div class="form-grupo">
+              <label for="correo">Correo electrónico *</label>
+              <input type="email" id="correo" name="correo" required placeholder="tu@correo.com">
+            </div>
+            <div class="form-grupo">
+              <label for="telefono">Teléfono / WhatsApp *</label>
+              <input type="tel" id="telefono" name="telefono" required placeholder="662 123 4567">
+            </div>
+          </div>
+
+          <div class="form-grupo">
+            <label for="categoria">¿Qué tipo de producto buscas?</label>
+            <select id="categoria" name="categoria">
+              <option value="">Selecciona una opción</option>
+              <option value="agricola">Área Agrícola (cobijas, colchonetas, prendas de campo)</option>
+              <option value="industrial">Área Industrial (overoles, EPP, chalecos)</option>
+              <option value="empresarial">Uniformes empresariales (polos, camisas)</option>
+              <option value="promocionales">Artículos promocionales (termos, plumas, mochilas)</option>
+              <option value="personalizacion">Personalización (bordado, DTF, sublimado)</option>
+              <option value="otro">Otro producto (especifica abajo)</option>
+            </select>
+          </div>
+
+          <div class="form-fila">
+            <div class="form-grupo">
+              <label for="cantidad">Cantidad aproximada</label>
+              <input type="text" id="cantidad" name="cantidad" placeholder="Ej: 50 piezas">
+            </div>
+            <div class="form-grupo">
+              <label for="ciudad">Ciudad y estado *</label>
+              <input type="text" id="ciudad" name="ciudad" required placeholder="Hermosillo, Sonora">
+            </div>
+          </div>
+
+          <div class="form-grupo">
+            <label for="detalle">Detalles del producto *</label>
+            <textarea id="detalle" name="detalle" required placeholder="Cuéntanos: qué necesitas, colores, tallas, si lleva logo o personalización, fecha de entrega esperada, etc."></textarea>
+          </div>
+
+          <button type="submit" class="form-enviar">
+            Enviar cotización →
+          </button>
+
+          <p style="font-size: 12px; color: var(--texto-claro); text-align: center; margin-top: 16px; line-height: 1.6;">
+            Al enviar, aceptas que te contactemos para resolver tu solicitud. No compartimos tus datos.
+          </p>
+        </form>
+      </div>
+
+      <!-- CONTACTO RÁPIDO -->
+      <div>
+        <div class="contacto-rapido" style="margin-top: 0;">
+          <h3 style="font-size: 16px; margin-bottom: 6px; color: var(--texto-principal);">¿Prefieres contacto directo?</h3>
+          <p style="font-size: 13px; color: var(--texto-gris); margin-bottom: 20px; line-height: 1.6;">El WhatsApp suele ser lo más rápido. Te respondemos en horario laboral.</p>
+
+          <a href="https://wa.me/5216621705229?text=Hola%20Anvavi,%20necesito%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener" class="contacto-item" style="text-decoration: none;">
+            <div class="contacto-item-icono" style="background: var(--verde-whatsapp);"><i class="ti ti-brand-whatsapp"></i></div>
+            <div class="contacto-item-info">
+              <div class="contacto-item-label">WhatsApp · Beatriz</div>
+              <div class="contacto-item-valor">662 170 5229</div>
+            </div>
+          </a>
+
+          <a href="tel:6621706088" class="contacto-item" style="text-decoration: none;">
+            <div class="contacto-item-icono"><i class="ti ti-phone"></i></div>
+            <div class="contacto-item-info">
+              <div class="contacto-item-label">Teléfono · Andrés</div>
+              <div class="contacto-item-valor">662 170 6088</div>
+            </div>
+          </a>
+
+          <a href="mailto:beamirazo@hotmail.com" class="contacto-item" style="text-decoration: none;">
+            <div class="contacto-item-icono"><i class="ti ti-mail"></i></div>
+            <div class="contacto-item-info">
+              <div class="contacto-item-label">Correo</div>
+              <div class="contacto-item-valor" style="font-size: 13px;">beamirazo@hotmail.com</div>
+            </div>
+          </a>
+
+          <div class="contacto-item">
+            <div class="contacto-item-icono"><i class="ti ti-map-pin"></i></div>
+            <div class="contacto-item-info">
+              <div class="contacto-item-label">Oficina</div>
+              <div class="contacto-item-valor" style="font-size: 13px;">Benito Juárez #31<br>Col. Centro, Hermosillo</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="background: var(--azul-marca); color: var(--blanco); padding: 24px; border-radius: 16px; margin-top: 16px;">
+          <div style="font-size: 12px; opacity: 0.8; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 10px;">Tiempos típicos</div>
+          <div style="font-size: 14px; line-height: 1.7; opacity: 0.95;">
+            Cotización: <strong>menos de 24 hrs</strong><br>
+            Producción: <strong>3 a 15 días</strong><br>
+            Entrega local: <strong>inmediata</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-contenido">
+      <div class="footer-info">
+        <img src="assets/logo.jpg" alt="Anvavi" class="footer-logo">
+        <p class="footer-info-texto">Comercializadora con más de 20 años abasteciendo al noroeste de México.</p>
+        <div class="footer-direccion">Benito Juárez #31, Col. Centro<br>Hermosillo, Sonora</div>
+      </div>
+      <div class="footer-columnas">
+        <div>
+          <div class="footer-titulo">Contacto</div>
+          <div class="footer-lista">
+            <a href="tel:6621705229">662 170 5229</a><br>
+            <a href="tel:6621706088">662 170 6088</a><br>
+            <a href="mailto:beamirazo@hotmail.com">beamirazo@hotmail.com</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-titulo">Empresa</div>
+          <div class="footer-lista">
+            <a href="areas.html">Áreas</a><br>
+            <a href="personalizacion.html">Personalización</a><br>
+            <a href="nosotros.html">Nosotros</a><br>
+            <a href="cotiza.html">Cotiza</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      © 2026 Anvavi Comercializadora · Hermosillo, Sonora
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5216621705229" class="wa-flotante" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <i class="ti ti-brand-whatsapp"></i>
+  </a>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navMenu').classList.toggle('abierto');
+    }
+  </script>
+
+  <style>
+    /* Responsive del formulario de cotización */
+    @media (max-width: 900px) {
+      .bloque-contenido[style*="grid-template-columns: 1fr 380px"] {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  </style>
+
+</body>
+</html>
